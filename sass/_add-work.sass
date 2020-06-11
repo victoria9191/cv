@@ -1,0 +1,52 @@
+.section__logo
+  position: relative
+.add-work
+  &__checkbox
+    display: none
+  &__button
+    cursor: pointer
+    z-index: 2
+    background-color: $color-primary
+    border-radius: 50%
+    height: 100%
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+.add-work__checkbox:checked ~ .add-work__background
+  z-index: 1
+  transform: scale(50)
+.add-work__add-icon
+   display: none
+.add-work__remove-icon
+   display: none
+.add-work__button:hover
+  & .add-work__icon
+    display: none
+  & .add-work__add-icon
+    display: flex
+.add-work__checkbox:checked ~ .add-work__button
+  position: fixed
+  top: 30px
+  right: 30px
+  height: 38px
+  width: 38px
+  z-index: 3
+  & .add-work__icon
+    display: none
+  & .add-work__add-icon
+   display: none
+  & .add-work__remove-icon
+    display: flex
+
+.add-work__background
+  opacity: 
+  z-index: 1
+  position: absolute
+  top: 0
+  left: 0
+  height: 38px
+  width: 38px
+  border-radius: 50%
+  background-image: radial-gradient(rgba(41,184,229,1), rgba(188,224,238,1))
+  transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) 

@@ -1,0 +1,107 @@
+.moveInLeft {
+	animation: moveInLeft 0.7s ease-out .4s;
+	animation-fill-mode: backwards;
+}
+
+.moveInRight {
+	animation: moveInRight 0.7s ease-out .4s;
+	animation-fill-mode: backwards;
+}
+
+.moveInTop {
+	animation: moveInTop .3s ease-out .55s;
+	animation-fill-mode: backwards;
+}
+
+.increaseWidth {
+	animation: increaseWidth 0.3s ease-out .4s;
+	animation-fill-mode: backwards;
+}
+
+.increaseOpacity {
+	animation: increaseOpacity 0.7s ease-out .4s;
+	animation-fill-mode: backwards;
+}
+
+.moveInLeftBar {
+	animation: moveInLeftBar 0.7s ease-out .4s;
+	animation-fill-mode: backwards;
+}
+
+@keyframes moveInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+	80% {
+		transform: translateX(10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes moveInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(100px);
+	}
+	80% {
+		transform: translateX(-10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes moveInTop {
+	0% {
+		opacity: 0;
+		transform: translateY(-30px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes increaseWidth {
+	0% {
+		opacity: 0;
+		width: 0%;
+	}
+
+	50% {
+		opacity: 0;
+		width: 85%;
+	}
+
+	100% {
+		opacity: 1;
+		width: 100%;
+	}
+}
+
+@keyframes increaseOpacity {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes moveInLeftBar {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}

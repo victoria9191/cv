@@ -1,0 +1,27 @@
+.header
+  &__avatar
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 150px
+    height: 150px
+    border-radius: 50%
+    border: 1px solid #000
+    position: relative
+    &::before
+      content: ""
+      background: url(img/avatar.jpg)
+      background-size: cover
+      width: 130px
+      height: 130px
+      border-radius: 50%
+    &::after
+      content: ""
+      position: absolute
+      background-color: #000
+      opacity: 0.4
+      width: 130px
+      height: 130px
+      border-radius: 50%
+      
+    
